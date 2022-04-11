@@ -17,7 +17,9 @@ def button_callback(channel, number):
     
 GPIO.setwarnings(False) # Ignore warning for now
 GPIO.setmode(GPIO.BOARD) # Use physical pin numbering
+#button
 GPIO.setup(10, GPIO.IN, pull_up_down=GPIO.PUD_DOWN) 
+#LEDS
 GPIO.setup(22, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN) 
 GPIO.setup(24, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN) 
 GPIO.setup(26, GPIO.OUT, pull_up_down=GPIO.PUD_DOWN) 
